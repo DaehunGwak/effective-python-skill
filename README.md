@@ -6,6 +6,12 @@
 [![Claude Code Skill](https://img.shields.io/badge/claude--code-skill-blueviolet.svg)](https://code.claude.com/docs/en/skills)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+<div align="center">
+
+Translations: [한국어](https://github.com/DaehunGwak/effective-python-skill/blob/translation/ko/README.ko.md)
+
+</div>
+
 ## Why This Skill?
 
 Claude Code already writes decent Python — but "decent" isn't "Pythonic." This skill encodes the **125 battle-tested principles** from Brett Slatkin's Effective Python so Claude Code consistently produces idiomatic, maintainable, high-performance code.
