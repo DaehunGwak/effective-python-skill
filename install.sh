@@ -2,10 +2,10 @@
 set -euo pipefail
 
 # Effective Python — Claude Code Skill Installer
-# Usage: curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/effective-python-skill/main/install.sh | bash
+# Usage: curl -sSL https://raw.githubusercontent.com/DaehunGwak/effective-python-skill/main/install.sh | bash
 
-SKILL_NAME="effective-python"
-REPO_URL="https://github.com/YOUR_USERNAME/effective-python-skill.git"
+SKILL_NAME="effective-python-3e"
+REPO_URL="https://github.com/DaehunGwak/effective-python-skill.git"
 
 # Determine install location
 if [ -d ".claude" ]; then

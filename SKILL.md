@@ -1,5 +1,5 @@
 ---
-name: effective-python
+name: effective-python-3e
 description: >
   Apply Effective Python 3rd Edition principles (Brett Slatkin, 125 items) to write
   idiomatic, high-quality Python code. Covers Pythonic thinking, modern syntax (3.13+),
@@ -51,7 +51,7 @@ Load ONLY the reference files relevant to the current task.
 | Packaging, imports, docstrings, collaboration      | `references/ch13-collab.md`      |
 
 **For code generation**: Load 1–3 most relevant references based on the task.
-**For code review** (`/effective-python` invocation): Load all relevant references
+**For code review** (`/effective-python-3e` invocation): Load all relevant references
 for the code being reviewed and apply the full checklist below.
 
 ## Universal Principles (Always Apply)
@@ -116,11 +116,11 @@ When generating Python code, automatically apply the universal principles above
 and load 1–2 relevant reference files based on the code being written.
 Do not announce that you're using this skill — just write good Python.
 
-### Review Mode (`/effective-python [path]`)
+### Review Mode (`/effective-python-3e [path]`)
 Perform a comprehensive review of the specified code against the full checklist.
 Load all relevant reference files. Output a structured review with findings
 grouped by severity: 🔴 Critical → 🟡 Suggestion → 🟢 Good Practice Spotted.
 
-### Refactor Mode (`/effective-python refactor [path]`)
+### Refactor Mode (`/effective-python-3e refactor [path]`)
 Apply the principles to refactor existing code. Show before/after with explanations
 referencing the relevant principle.

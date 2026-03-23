@@ -4,6 +4,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![Claude Code Skill](https://img.shields.io/badge/claude--code-skill-blueviolet.svg)](https://code.claude.com/docs/en/skills)
+[![Install with skills.sh](https://img.shields.io/badge/skills.sh-install-blue)](https://skills.sh)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 <div align="center">
@@ -26,18 +27,26 @@ Claude Code already writes decent Python — but "decent" isn't "Pythonic." This
 
 ## Quick Install
 
-```bash
-# One-liner install (project-level)
-git clone https://github.com/YOUR_USERNAME/effective-python-skill.git .claude/skills/effective-python
+### Via skills.sh (Recommended)
 
-# Or global install (all projects)
-git clone https://github.com/YOUR_USERNAME/effective-python-skill.git ~/.claude/skills/effective-python
+```bash
+npx skills add DaehunGwak/effective-python-skill
 ```
 
-Or use the install script:
+### Via git clone
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/effective-python-skill/main/install.sh | bash
+# Project-level
+git clone https://github.com/DaehunGwak/effective-python-skill.git .claude/skills/effective-python-3e
+
+# Global (all projects)
+git clone https://github.com/DaehunGwak/effective-python-skill.git ~/.claude/skills/effective-python-3e
+```
+
+### Via install script
+
+```bash
+curl -sSL https://raw.githubusercontent.com/DaehunGwak/effective-python-skill/main/install.sh | bash
 ```
 
 ## Usage
@@ -50,7 +59,7 @@ No commands needed — just ask Claude to write code and it applies Effective Py
 ### Review Mode — Audit Existing Code
 
 ```
-/effective-python src/mypackage/
+/effective-python-3e src/mypackage/
 ```
 
 Performs a comprehensive review against the Effective Python checklist:
@@ -71,7 +80,7 @@ Performs a comprehensive review against the Effective Python checklist:
 ### Refactor Mode — Modernize Code
 
 ```
-/effective-python refactor src/legacy_module.py
+/effective-python-3e refactor src/legacy_module.py
 ```
 
 Shows before/after with references to which Effective Python principle applies.
@@ -81,7 +90,7 @@ Shows before/after with references to which Effective Python principle applies.
 Quick AST-based scan for common anti-patterns:
 
 ```bash
-python .claude/skills/effective-python/scripts/check_patterns.py src/
+python .claude/skills/effective-python-3e/scripts/check_patterns.py src/
 ```
 
 Detects: mutable defaults, bare except, `range(len())`, string concatenation in loops,
@@ -90,7 +99,7 @@ missing type annotations, `isinstance` chains, and more.
 ## Architecture
 
 ```
-effective-python/
+effective-python-3e/
 ├── SKILL.md                    # Orchestrator with routing table (126 lines)
 ├── references/                 # Chapter-specific guidelines (lazy-loaded)
 │   ├── ch01-pythonic.md       # Pythonic Thinking — syntax, expressions, style
